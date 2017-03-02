@@ -1,0 +1,2 @@
+# Set the value of this setting to true to suppress all logging output other than error messages.
+logging.quiet: true
