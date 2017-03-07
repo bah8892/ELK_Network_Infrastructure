@@ -1,0 +1,186 @@
+
+{
+  "took" : 2,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 59,
+    "max_score" : null,
+    "hits" : [
+      {
+        "_index" : "filebeat-2017.03.07",
+        "_type" : "bro",
+        "_id" : "AVqq5taOfQL9inTyziyz",
+        "_score" : null,
+        "_source" : {
+          "id_resp_p" : 80,
+          "runtime_timestamp" : "2017-03-07T22:32:09.339Z",
+          "id_orig_h" : "192.168.201.72",
+          "id_resp_h" : "192.168.22.138",
+          "id_orig_p" : 48711,
+          "tags" : [ ]
+        },
+        "sort" : [
+          1488925929339
+        ]
+      },
+      {
+        "_index" : "filebeat-2017.03.07",
+        "_type" : "bro",
+        "_id" : "AVqq5taOfQL9inTyziy1",
+        "_score" : null,
+        "_source" : {
+          "id_resp_p" : 80,
+          "runtime_timestamp" : "2017-03-07T22:32:09.339Z",
+          "id_orig_h" : "192.168.201.72",
+          "id_resp_h" : "192.168.24.151",
+          "id_orig_p" : 52001,
+          "tags" : [ ]
+        },
+        "sort" : [
+          1488925929339
+        ]
+      },
+      {
+        "_index" : "filebeat-2017.03.07",
+        "_type" : "bro",
+        "_id" : "AVqq5taOfQL9inTyziy2",
+        "_score" : null,
+        "_source" : {
+          "id_resp_p" : 80,
+          "runtime_timestamp" : "2017-03-07T22:32:09.339Z",
+          "id_orig_h" : "192.168.201.72",
+          "id_resp_h" : "192.168.24.151",
+          "id_orig_p" : 52020,
+          "tags" : [ ]
+        },
+        "sort" : [
+          1488925929339
+        ]
+      },
+      {
+        "_index" : "filebeat-2017.03.07",
+        "_type" : "bro",
+        "_id" : "AVqq5tapfQL9inTyzi0E",
+        "_score" : null,
+        "_source" : {
+          "id_resp_p" : 80,
+          "runtime_timestamp" : "2017-03-07T22:32:09.339Z",
+          "id_orig_h" : "192.168.201.72",
+          "id_resp_h" : "192.168.22.138",
+          "id_orig_p" : 48724,
+          "tags" : [ ]
+        },
+        "sort" : [
+          1488925929339
+        ]
+      },
+      {
+        "_index" : "filebeat-2017.03.07",
+        "_type" : "bro",
+        "_id" : "AVqq5tapfQL9inTyzi0H",
+        "_score" : null,
+        "_source" : {
+          "id_resp_p" : 80,
+          "runtime_timestamp" : "2017-03-07T22:32:09.339Z",
+          "id_orig_h" : "192.168.201.72",
+          "id_resp_h" : "192.168.24.151",
+          "id_orig_p" : 52040,
+          "tags" : [ ]
+        },
+        "sort" : [
+          1488925929339
+        ]
+      },
+      {
+        "_index" : "filebeat-2017.03.07",
+        "_type" : "bro",
+        "_id" : "AVqq5tapfQL9inTyzi0b",
+        "_score" : null,
+        "_source" : {
+          "id_resp_p" : 80,
+          "runtime_timestamp" : "2017-03-07T22:32:09.339Z",
+          "id_orig_h" : "192.168.201.72",
+          "id_resp_h" : "192.168.24.151",
+          "id_orig_p" : 52006,
+          "tags" : [ ]
+        },
+        "sort" : [
+          1488925929339
+        ]
+      },
+      {
+        "_index" : "filebeat-2017.03.07",
+        "_type" : "bro",
+        "_id" : "AVqq5tapfQL9inTyzi0c",
+        "_score" : null,
+        "_source" : {
+          "id_resp_p" : 80,
+          "runtime_timestamp" : "2017-03-07T22:32:09.339Z",
+          "id_orig_h" : "192.168.201.72",
+          "id_resp_h" : "192.168.24.151",
+          "id_orig_p" : 52036,
+          "tags" : [ ]
+        },
+        "sort" : [
+          1488925929339
+        ]
+      },
+      {
+        "_index" : "filebeat-2017.03.07",
+        "_type" : "bro",
+        "_id" : "AVqq5tbbfQL9inTyzi1p",
+        "_score" : null,
+        "_source" : {
+          "id_resp_p" : 80,
+          "runtime_timestamp" : "2017-03-07T22:32:09.339Z",
+          "id_orig_h" : "192.168.201.72",
+          "id_resp_h" : "192.168.24.151",
+          "id_orig_p" : 52019,
+          "tags" : [ ]
+        },
+        "sort" : [
+          1488925929339
+        ]
+      },
+      {
+        "_index" : "filebeat-2017.03.07",
+        "_type" : "bro",
+        "_id" : "AVqq5tbbfQL9inTyzi1t",
+        "_score" : null,
+        "_source" : {
+          "id_resp_p" : 80,
+          "runtime_timestamp" : "2017-03-07T22:32:09.339Z",
+          "id_orig_h" : "192.168.201.72",
+          "id_resp_h" : "192.168.24.151",
+          "id_orig_p" : 52046,
+          "tags" : [ ]
+        },
+        "sort" : [
+          1488925929339
+        ]
+      },
+      {
+        "_index" : "filebeat-2017.03.07",
+        "_type" : "bro",
+        "_id" : "AVqq5taOfQL9inTyziy3",
+        "_score" : null,
+        "_source" : {
+          "id_resp_p" : 80,
+          "runtime_timestamp" : "2017-03-07T22:32:09.339Z",
+          "id_orig_h" : "192.168.201.72",
+          "id_resp_h" : "192.168.24.151",
+          "id_orig_p" : 52025,
+          "tags" : [ ]
+        },
+        "sort" : [
+          1488925929339
+        ]
+      }
+    ]
+  }
+}
