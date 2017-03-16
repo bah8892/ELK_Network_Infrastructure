@@ -46,6 +46,4 @@ filebeat.prospectors:
 EOF
 
 
-echo "Don't forget to add your file paths!!"
-
 systemctl restart filebeat
