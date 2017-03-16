@@ -27,6 +27,13 @@ sed -i "s#interface=eth0#interface=$broInterface#g" /usr/local/bro/etc/node.cfg
 # Enable Bro JSON logging
 sed -i 's#const use_json = F#const use_json = T#g' /usr/local/bro/share/bro/base/frameworks/logging/writers/ascii.bro
 
+# Set up the symbols in the bro output to be C# friendly
+vim /usr/local/bro/share/bro/base/frameworks/logging/main.bro
+
+## The this field to have an underscore instead of a period
+## const default_scope_sep = "_" &redef;
+## It is about 17% down in the file
+
 # Start Bro
 /usr/local/bro/bin/broctl install
 /usr/local/bro/bin/broctl start
