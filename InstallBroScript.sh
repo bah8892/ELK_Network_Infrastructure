@@ -4,8 +4,8 @@
 # https://github.com/Benster900/CloudsOfHoneyManagementNode/blob/master/scripts/deploy_bro.sh#L130
 
 # Update the system
-Yum update -y && yum upgrade -y
-Yum install git vim curl -y
+yum update -y && yum upgrade -y
+yum install git vim curl -y
 
 # Install Dependencies
 yum install cmake make gcc gcc-c++ flex bison libpcap-devel openssl-devel python-devel swig zlib-devel git -y
