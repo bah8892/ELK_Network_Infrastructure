@@ -6,7 +6,7 @@ sudo rpm -vi packetbeat-5.2.2-x86_64.rpm
 
 ## That's really it, from here you need to change the configuration
 # However you want to.
-
+yum install vim
 ## Change the interface and type of packet capture
 vim /etc/packetbeat/packetbeat.yml 
 
