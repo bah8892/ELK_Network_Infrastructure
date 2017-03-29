@@ -1,7 +1,14 @@
 filebeat.prospectors:
 - input_type: log
   paths:
-    - /usr/local/bro/logs/current/*.log
+      - /usr/local/bro/logs/current/conn.log
+      - /usr/local/bro/logs/current/dhcp.log
+      - /usr/local/bro/logs/current/http.log
+      - /usr/local/bro/logs/current/ssl.log
+      - /usr/local/bro/logs/current/dns.log
+      - /usr/local/bro/logs/current/known_services.log
+      - /usr/local/bro/logs/current/ssh.log
+      - /usr/local/bro/logs/current/weird.log
   fields:
     sensorID:
     sensorType: networksensor
