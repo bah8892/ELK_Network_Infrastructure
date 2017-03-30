@@ -125,7 +125,7 @@ packetbeat.protocols.nfs:
 #----------------------------- Logstash output --------------------------------
 output.logstash:
   # The Logstash hosts
-  hosts: ["129.21.38.54:5044"]
+  hosts: [":5044"]
   #hosts:["192.168.137.129:5044"]
   # Optional SSL. By default is off.
   # List of root certificates for HTTPS server verifications
