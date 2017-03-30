@@ -44,7 +44,7 @@ service filebeat restart
 
 
 # Enable this service on start
-sudo update-rc.d filebeat defaults
+sudo update-rc.d filebeat defaults 95 10
 
 
 exit

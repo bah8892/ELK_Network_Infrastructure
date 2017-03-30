@@ -10,4 +10,4 @@ echo 'Make any changes to the packetbeat config in /etc/packetbeat/packetbeat.ym
 
 service packetbeat start
 
-sudo update-rc.d packetbeat defaults
+sudo update-rc.d packetbeat defaults 95 10

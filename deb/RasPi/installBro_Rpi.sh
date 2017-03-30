@@ -17,3 +17,13 @@ dpkg -i bro_2.4.1-0_armhf.deb bro-core_2.4.1-0_armhf.deb \
 broctl_2.4.1-0_armhf.deb libbroccoli_2.4.1-0_armhf.deb
 
  /opt/bro/bin/broctl 
+
+
+ # Install Bro
+cd /opt
+git clone --recursive git://git.bro.org/bro
+cd bro
+./configure
+make
+make install
+export PATH=/usr/local/bro/bin:$PATH
