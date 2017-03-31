@@ -32,3 +32,15 @@ git clone https://github.com/bah8892/NetworkMonitorVis.git
 cp NetworkMonitorVis/Configuration/filebeat /etc/
 
 /usr/bin/filebeat -path.home /etc/filebeat
+
+
+## How to set up a script to run on start for a machine
+chmod +x+u /home/script.sh
+cp /usr/local/bin
+
+update-rc.d /home/script.sh defaults
+
+
+crontab -e
+
+@reboot /path/to/script
