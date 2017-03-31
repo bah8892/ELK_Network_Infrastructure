@@ -1,5 +1,5 @@
 # Install bro on ubuntu
-
+## This builds from source
 # install dependencies
 sudo apt-get install cmake make gcc g++ flex bison libpcap-dev libssl-dev python-dev swig zlib1g-dev git
 
