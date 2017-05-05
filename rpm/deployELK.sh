@@ -26,7 +26,7 @@ type=rpm-md
 ' | sudo tee /etc/yum.repos.d/elasticsearch.repo
 sudo yum -y install elasticsearch
 
-sed -i 's/#network.host: 192.168.0.1/network.host: localhost/g' /etc/elasticsearch/elasticsearch.yml
+sed -i 's/#network.host: 192.168.0.1/network.host: 0.0.0.0/g' /etc/elasticsearch/elasticsearch.yml
 
 systemctl enable elasticsearch
 systemctl start elasticsearch
@@ -54,7 +54,7 @@ sudo chkconfig kibana on
 ##################################### Install/Setup Nginx #####################################
 yum -y install epel-release
 yum -y install nginx httpd-tools
-sudo htpasswd -c /etc/nginx/htpasswdKibana.users kibanaadmin
+sudo htpasswd -c /etc/nginx/htpasswd.users kibanaadmin
 cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
 
 # Delete server block  in default config
@@ -63,24 +63,24 @@ sed -i -e '38,87d' /etc/nginx/nginx.conf
 mkdir /etc/nginx/conf.d
 
   cat > /etc/nginx/conf.d/kibana.conf << EOF
-  server {
-      listen 80;
+server {
+    listen 80;
 
-      server_name example.com;
+    server_name example.com;
 
-      auth_basic "Restricted Access";
-      auth_basic_user_file /etc/nginx/htpasswd.users;
+    auth_basic "Restricted Access";
+    auth_basic_user_file /etc/nginx/htpasswd.users;
 
-      location / {
-          proxy_pass http://localhost:5601;
-          proxy_http_version 1.1;
-          proxy_set_header Upgrade $http_upgrade;
-          proxy_set_header Connection 'upgrade';
-          proxy_set_header Host $host;
-          proxy_cache_bypass $http_upgrade;        
-      }
-  }
-  EOF
+    location / {
+        proxy_pass http://localhost:5601;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+EOF
 
 sudo systemctl start nginx
 sudo systemctl enable nginx
